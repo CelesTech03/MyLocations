@@ -10,12 +10,6 @@ import CoreLocation
 
 class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
     
-    let locationManager = CLLocationManager()
-    // Stores user's location
-    var location: CLLocation?
-    var updatingLocation = false
-    var lastLocationError: Error?
-    
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
@@ -23,6 +17,11 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     @IBOutlet weak var tagButton: UIButton!
     @IBOutlet weak var getButton: UIButton!
     
+    let locationManager = CLLocationManager()
+    // Stores user's location
+    var location: CLLocation?
+    var updatingLocation = false
+    var lastLocationError: Error?
     let geocoder = CLGeocoder()
     var placemark: CLPlacemark?
     var performingReverseGeocoding = false
@@ -121,7 +120,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     }
     
     // MARK: - Actions
-    // Tells the location manager to receive locations with an accuracy of up to ten meters
+    // Button: Checks location services settings, determines location
     @IBAction func getLocation() {
         
         let authStatus = locationManager.authorizationStatus
@@ -191,25 +190,15 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             location = newLocation
             
             if newLocation.horizontalAccuracy <= locationManager.desiredAccuracy {
+                // print("*** We're done!")
+                stopLocationManager()
                 // Forces a reverse geocoding for the final location
                 if distance > 0 {
                     performingReverseGeocoding = false
                 }
-                
-                // print("*** We're done!")
-                stopLocationManager()
-            }
-            updateLabels()
-            
-            // If coordinate from reading is not significantly diff. after more than 10 secs, then stop reading
-        } else if distance < 1 {
-            let timeInterval = newLocation.timestamp.timeIntervalSince(location!.timestamp)
-            if timeInterval > 10 {
-                // print("*** Force done!")
-                stopLocationManager()
-                updateLabels()
             }
             
+            // Start of reverse geocoding
             if !performingReverseGeocoding {
                 // print("*** Going to geocode")
                 
@@ -226,9 +215,20 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                     self.updateLabels()
                 }
             }
+            updateLabels()
+            // If coordinate from reading is not significantly diff. after more than 10 secs, then stop reading
+        } else if distance < 1 {
+            let timeInterval = newLocation.timestamp.timeIntervalSince(location!.timestamp)
+            if timeInterval > 10 {
+                // print("*** Force done!")
+                stopLocationManager()
+                updateLabels()
+            }
             
         }
+        
     }
+    
     
     // MARK: - Navigation
     // Fill in the details properties when the user taps the Tag Location button
@@ -257,6 +257,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         present(alert, animated: true, completion: nil)
     }
     
+    // Updates latitude and longitude labels with current coordinates
     func updateLabels() {
         if let location = location {
             latitudeLabel.text = String(
@@ -277,11 +278,12 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             } else {
                 addressLabel.text = "No Address Found"
             }
-        } else {
+        } else { // Default text when location is still nil
             latitudeLabel.text = ""
             longitudeLabel.text = ""
             addressLabel.text = ""
             tagButton.isHidden = true
+            // Message at the top of the screen
             let statusMessage: String
             if let error = lastLocationError as NSError? {
                 if error.domain == kCLErrorDomain && error.code == CLError.denied.rawValue {

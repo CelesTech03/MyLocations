@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AA8E93022906C8D50077D672 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */; };
 		AA8E93042906E64C0077D672 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */; };
+		AA8E93062906F1EA0077D672 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E93052906F1EA0077D672 /* HudView.swift */; };
+		AA8E9308290705740077D672 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E9307290705740077D672 /* Functions.swift */; };
 		AAAD2DFB29033B7700C28905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD2DFA29033B7700C28905 /* AppDelegate.swift */; };
 		AAAD2DFD29033B7700C28905 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD2DFC29033B7700C28905 /* SceneDelegate.swift */; };
 		AAAD2DFF29033B7700C28905 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD2DFE29033B7700C28905 /* CurrentLocationViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
+		AA8E93052906F1EA0077D672 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		AA8E9307290705740077D672 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		AAAD2DF729033B7700C28905 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAD2DFA29033B7700C28905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAD2DFC29033B7700C28905 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */,
 				AAAD2E0B29033B7800C28905 /* Info.plist */,
 				AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */,
+				AA8E93052906F1EA0077D672 /* HudView.swift */,
+				AA8E9307290705740077D672 /* Functions.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -150,8 +156,10 @@
 				AA8E93042906E64C0077D672 /* CategoryPickerViewController.swift in Sources */,
 				AAAD2DFF29033B7700C28905 /* CurrentLocationViewController.swift in Sources */,
 				AAAD2DFB29033B7700C28905 /* AppDelegate.swift in Sources */,
+				AA8E9308290705740077D672 /* Functions.swift in Sources */,
 				AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */,
 				AAAD2DFD29033B7700C28905 /* SceneDelegate.swift in Sources */,
+				AA8E93062906F1EA0077D672 /* HudView.swift in Sources */,
 				AA8E93022906C8D50077D672 /* LocationDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
