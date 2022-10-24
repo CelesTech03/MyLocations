@@ -35,6 +35,18 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         updateLabels()
     }
     
+    // Hides the navigation bar at runtime (curr. location view controller)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    // Shows navigation bar once curr. location view controlleris about to disappear from view
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     func startLocationManager() {
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
@@ -83,7 +95,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     }
     
     func string(from placemark: CLPlacemark) -> String {
-        // Create a new string variable for the first line of text
+        // Creates a new string variable for the first line of text
         var line1 = ""
         // If the placemark has a subThoroughfare, add it to the string
         if let tmp = placemark.subThoroughfare {
@@ -117,7 +129,6 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             locationManager.requestWhenInUseAuthorization()
             return
         }
-        
         // Tells user that location services are disabled if so
         if authStatus == .denied || authStatus == .restricted {
             showLocationServicesDeniedAlert()
@@ -158,7 +169,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         let newLocation = locations.last!
         // print("didUpdateLocations \(newLocation)")
         
-        // cached result if location result takes over 5 secs
+        // Cached result if location result takes over 5 secs
         if newLocation.timestamp.timeIntervalSinceNow < -5 {
             return
         }
@@ -216,6 +227,16 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                 }
             }
             
+        }
+    }
+    
+    // MARK: - Navigation
+    // Fill in the details properties when the user taps the Tag Location button
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TagLocation" {
+            let controller = segue.destination as! LocationDetailsViewController
+            controller.coordinate = location!.coordinate
+            controller.placemark = placemark
         }
     }
     
