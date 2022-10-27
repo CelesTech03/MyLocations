@@ -20,6 +20,8 @@
 		AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */; };
 		AAAD2E0729033B7800C28905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAD2E0629033B7800C28905 /* Assets.xcassets */; };
 		AAAD2E0A29033B7800C28905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */; };
+		AAF4500B290B0AEC006A81A5 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */; };
+		AAF4500D290B0E04006A81A5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4500C290B0E04006A81A5 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AAAD2E0629033B7800C28905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAD2E0929033B7800C28905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAAD2E0B29033B7800C28905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		AAF4500C290B0E04006A81A5 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +77,19 @@
 			isa = PBXGroup;
 			children = (
 				AAAD2DFA29033B7700C28905 /* AppDelegate.swift */,
-				AAAD2DFC29033B7700C28905 /* SceneDelegate.swift */,
-				AAAD2DFE29033B7700C28905 /* CurrentLocationViewController.swift */,
-				AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */,
-				AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */,
-				AAAD2E0029033B7700C28905 /* Main.storyboard */,
 				AAAD2E0629033B7800C28905 /* Assets.xcassets */,
-				AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */,
-				AAAD2E0B29033B7800C28905 /* Info.plist */,
-				AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */,
-				AA8E93052906F1EA0077D672 /* HudView.swift */,
+				AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */,
+				AAAD2DFE29033B7700C28905 /* CurrentLocationViewController.swift */,
 				AA8E9307290705740077D672 /* Functions.swift */,
+				AA8E93052906F1EA0077D672 /* HudView.swift */,
+				AAAD2E0B29033B7800C28905 /* Info.plist */,
+				AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */,
+				AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */,
+				AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */,
+				AAAD2E0029033B7700C28905 /* Main.storyboard */,
+				AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */,
+				AAAD2DFC29033B7700C28905 /* SceneDelegate.swift */,
+				AAF4500C290B0E04006A81A5 /* LocationCell.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 				AAAD2DFF29033B7700C28905 /* CurrentLocationViewController.swift in Sources */,
 				AAAD2DFB29033B7700C28905 /* AppDelegate.swift in Sources */,
 				AA8E9308290705740077D672 /* Functions.swift in Sources */,
+				AAF4500B290B0AEC006A81A5 /* LocationsViewController.swift in Sources */,
 				AA1CD74A290AEE06008D1BA9 /* Location+CoreDataProperties.swift in Sources */,
+				AAF4500D290B0E04006A81A5 /* LocationCell.swift in Sources */,
 				AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */,
 				AAAD2DFD29033B7700C28905 /* SceneDelegate.swift in Sources */,
 				AA1CD749290AEE06008D1BA9 /* Location+CoreDataClass.swift in Sources */,
