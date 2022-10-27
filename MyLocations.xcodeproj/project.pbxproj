@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1CD749290AEE06008D1BA9 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1CD747290AEE06008D1BA9 /* Location+CoreDataClass.swift */; };
+		AA1CD74A290AEE06008D1BA9 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1CD748290AEE06008D1BA9 /* Location+CoreDataProperties.swift */; };
 		AA8E93022906C8D50077D672 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */; };
 		AA8E93042906E64C0077D672 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */; };
 		AA8E93062906F1EA0077D672 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E93052906F1EA0077D672 /* HudView.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA1CD747290AEE06008D1BA9 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AA1CD748290AEE06008D1BA9 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		AA8E93052906F1EA0077D672 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		AAAD2DEE29033B7700C28905 = {
 			isa = PBXGroup;
 			children = (
+				AA1CD747290AEE06008D1BA9 /* Location+CoreDataClass.swift */,
+				AA1CD748290AEE06008D1BA9 /* Location+CoreDataProperties.swift */,
 				AAAD2DF929033B7700C28905 /* MyLocations */,
 				AAAD2DF829033B7700C28905 /* Products */,
 			);
@@ -157,8 +163,10 @@
 				AAAD2DFF29033B7700C28905 /* CurrentLocationViewController.swift in Sources */,
 				AAAD2DFB29033B7700C28905 /* AppDelegate.swift in Sources */,
 				AA8E9308290705740077D672 /* Functions.swift in Sources */,
+				AA1CD74A290AEE06008D1BA9 /* Location+CoreDataProperties.swift in Sources */,
 				AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */,
 				AAAD2DFD29033B7700C28905 /* SceneDelegate.swift in Sources */,
+				AA1CD749290AEE06008D1BA9 /* Location+CoreDataClass.swift in Sources */,
 				AA8E93062906F1EA0077D672 /* HudView.swift in Sources */,
 				AA8E93022906C8D50077D672 /* LocationDetailsViewController.swift in Sources */,
 			);
