@@ -20,6 +20,7 @@
 		AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */; };
 		AAAD2E0729033B7800C28905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAD2E0629033B7800C28905 /* Assets.xcassets */; };
 		AAAD2E0A29033B7800C28905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */; };
+		AAB3AE752911A81E004E713E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3AE742911A81E004E713E /* MapViewController.swift */; };
 		AAF4500B290B0AEC006A81A5 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */; };
 		AAF4500D290B0E04006A81A5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4500C290B0E04006A81A5 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		AAAD2E0629033B7800C28905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAD2E0929033B7800C28905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAAD2E0B29033B7800C28905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB3AE742911A81E004E713E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		AAF4500C290B0E04006A81A5 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */,
 				AAAD2DFC29033B7700C28905 /* SceneDelegate.swift */,
 				AAF4500C290B0E04006A81A5 /* LocationCell.swift */,
+				AAB3AE742911A81E004E713E /* MapViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				AA8E9308290705740077D672 /* Functions.swift in Sources */,
 				AAF4500B290B0AEC006A81A5 /* LocationsViewController.swift in Sources */,
 				AA1CD74A290AEE06008D1BA9 /* Location+CoreDataProperties.swift in Sources */,
+				AAB3AE752911A81E004E713E /* MapViewController.swift in Sources */,
 				AAF4500D290B0E04006A81A5 /* LocationCell.swift in Sources */,
 				AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */,
 				AAAD2DFD29033B7700C28905 /* SceneDelegate.swift in Sources */,
