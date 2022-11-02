@@ -24,6 +24,8 @@
 		AAF4500B290B0AEC006A81A5 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */; };
 		AAF4500D290B0E04006A81A5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4500C290B0E04006A81A5 /* LocationCell.swift */; };
 		AAF4AB412912CA18002749A5 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4AB402912CA18002749A5 /* UIImage+Resize.swift */; };
+		AAF4AB432912D38B002749A5 /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4AB422912D38B002749A5 /* String+AddText.swift */; };
+		AAF4AB462912EF3B002749A5 /* Sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = AAF4AB452912EF3B002749A5 /* Sound.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		AAF4500C290B0E04006A81A5 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		AAF4AB402912CA18002749A5 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		AAF4AB422912D38B002749A5 /* String+AddText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
+		AAF4AB452912EF3B002749A5 /* Sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sound.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		AAAD2DF929033B7700C28905 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
+				AAF4AB442912EF3B002749A5 /* Sound */,
 				AAAD2DFA29033B7700C28905 /* AppDelegate.swift */,
 				AAAD2E0629033B7800C28905 /* Assets.xcassets */,
 				AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */,
@@ -96,8 +101,17 @@
 				AAF4500C290B0E04006A81A5 /* LocationCell.swift */,
 				AAB3AE742911A81E004E713E /* MapViewController.swift */,
 				AAF4AB402912CA18002749A5 /* UIImage+Resize.swift */,
+				AAF4AB422912D38B002749A5 /* String+AddText.swift */,
 			);
 			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		AAF4AB442912EF3B002749A5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				AAF4AB452912EF3B002749A5 /* Sound.caf */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +174,7 @@
 			files = (
 				AAAD2E0A29033B7800C28905 /* LaunchScreen.storyboard in Resources */,
 				AAAD2E0729033B7800C28905 /* Assets.xcassets in Resources */,
+				AAF4AB462912EF3B002749A5 /* Sound.caf in Resources */,
 				AAAD2E0229033B7700C28905 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +198,7 @@
 				AAAD2E0529033B7700C28905 /* MyLocations.xcdatamodeld in Sources */,
 				AAAD2DFD29033B7700C28905 /* SceneDelegate.swift in Sources */,
 				AA1CD749290AEE06008D1BA9 /* Location+CoreDataClass.swift in Sources */,
+				AAF4AB432912D38B002749A5 /* String+AddText.swift in Sources */,
 				AA8E93062906F1EA0077D672 /* HudView.swift in Sources */,
 				AA8E93022906C8D50077D672 /* LocationDetailsViewController.swift in Sources */,
 			);
@@ -342,8 +358,10 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services gps";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,8 +393,10 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services gps";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
