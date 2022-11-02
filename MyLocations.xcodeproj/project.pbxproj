@@ -84,24 +84,14 @@
 		AAAD2DF929033B7700C28905 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
-				AAF4AB442912EF3B002749A5 /* Sound */,
+				AAF4AB492912F5D9002749A5 /* Data Models */,
+				AAF4AB482912F5AF002749A5 /* View Controllers */,
+				AAF4AB472912F58E002749A5 /* Resources */,
 				AAAD2DFA29033B7700C28905 /* AppDelegate.swift */,
-				AAAD2E0629033B7800C28905 /* Assets.xcassets */,
-				AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */,
-				AAAD2DFE29033B7700C28905 /* CurrentLocationViewController.swift */,
-				AA8E9307290705740077D672 /* Functions.swift */,
-				AA8E93052906F1EA0077D672 /* HudView.swift */,
 				AAAD2E0B29033B7800C28905 /* Info.plist */,
-				AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */,
-				AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */,
-				AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */,
-				AAAD2E0029033B7700C28905 /* Main.storyboard */,
 				AAAD2E0329033B7700C28905 /* MyLocations.xcdatamodeld */,
 				AAAD2DFC29033B7700C28905 /* SceneDelegate.swift */,
-				AAF4500C290B0E04006A81A5 /* LocationCell.swift */,
-				AAB3AE742911A81E004E713E /* MapViewController.swift */,
-				AAF4AB402912CA18002749A5 /* UIImage+Resize.swift */,
-				AAF4AB422912D38B002749A5 /* String+AddText.swift */,
+				AAF4AB442912EF3B002749A5 /* Sound */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -112,6 +102,40 @@
 				AAF4AB452912EF3B002749A5 /* Sound.caf */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		AAF4AB472912F58E002749A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD2E0629033B7800C28905 /* Assets.xcassets */,
+				AAAD2E0829033B7800C28905 /* LaunchScreen.storyboard */,
+				AAAD2E0029033B7700C28905 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAF4AB482912F5AF002749A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E93032906E64C0077D672 /* CategoryPickerViewController.swift */,
+				AAAD2DFE29033B7700C28905 /* CurrentLocationViewController.swift */,
+				AA8E93012906C8D50077D672 /* LocationDetailsViewController.swift */,
+				AAF4500A290B0AEC006A81A5 /* LocationsViewController.swift */,
+				AAB3AE742911A81E004E713E /* MapViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AAF4AB492912F5D9002749A5 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E9307290705740077D672 /* Functions.swift */,
+				AA8E93052906F1EA0077D672 /* HudView.swift */,
+				AAF4500C290B0E04006A81A5 /* LocationCell.swift */,
+				AAF4AB422912D38B002749A5 /* String+AddText.swift */,
+				AAF4AB402912CA18002749A5 /* UIImage+Resize.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

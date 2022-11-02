@@ -9,7 +9,8 @@ import UIKit
 
 extension UIImage {
     
-    /* Calculates how big the image should be in orer to fit inside the bounds rectangle. Then creates a new image context and draws the image into that */
+    /* Calculates how big the image should be in orer to fit inside the bounds rectangle.
+     Then creates a new image context and draws the image into that */
     func resized(withBounds bounds: CGSize) -> UIImage {
         let horizontalRatio = bounds.width / size.width
         let verticalRatio = bounds.height / size.height
